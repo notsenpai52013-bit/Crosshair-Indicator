@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Miniblox Crosshair Indicator",
+  "version": "1.0",
+  "description": "Adds a customizable crosshair with color sliders for Miniblox.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://miniblox.io/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "host_permissions": ["https://miniblox.io/*"]
+}
